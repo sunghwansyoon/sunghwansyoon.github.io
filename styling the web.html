@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<style>
+    h1 {color:aquamarine;}
+    h2 {color:chartreuse;}
+    p {color:blueviolet;}
+</style>
+    <title>Styling the Web</title>
+</head>
+
+<body>
+
+    <h1>This is Heading 1.</h1>
+
+    <p id="demo"></p>
+    <button id="changeTextButton">Change Text</button>
+
+    <div>
+        <h2>
+            This is Heading 2 in div.
+        </h2>
+        <p>
+            This is a very long paragraph in div.
+        </p>
+    </div>
+
+    <a href="https://zoeleblanc.com/is310-computing-humanities-2024/">
+        Visit IS 310 course website.
+    </a>
+
+    <script>
+        let isTextChanged = false;
+        document.getElementById("changeTextButton").addEventListener("click", function() {
+            if (!isTextChanged) {
+                document.getElementById("demo").innerHTML = "The text has been changed!";
+                isTextChanged = true;
+            } else {
+                document.getElementById("demo").innerHTML = "";
+                isTextChanged = false;
+            }
+        });
+    </script>
+
+</body>
