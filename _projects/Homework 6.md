@@ -21,7 +21,7 @@ This is a homework assignment for [IS 455 - Data Visualization](https://uiuc-isc
 
 ### This is a plot of bigfoot observations in the United States
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/bigfoot.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/bigfoot_interaction.json" style="width: 100%"></vegachart>
 
 
 #### First Plot Write-up
