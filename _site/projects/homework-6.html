@@ -81,9 +81,23 @@
 
 <p>This is a homework assignment for <a href="https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2024/">IS 455 - Data Visualization</a>.</p>
 
-<h4 id="this-is-a-plot-of-bigfoot-observations-in-the-united-states">This is a plot of bigfoot observations in the United States</h4>
+<h3 id="this-is-a-plot-of-bigfoot-observations-in-the-united-states">This is a plot of bigfoot observations in the United States</h3>
 
 <vegachart schema-url="/assets/json/bigfoot.json" style="width: 100%"></vegachart>
+
+<h4 id="first-plot-write-up">First Plot Write-up</h4>
+
+<p>The first plot on the left illustrates the number of Bigfoot observations. Bigfoot is a large, hairy creature commonly referred to as Sasquatch. I encoded this plot using mark_line with a navy color to show the trend of observations reported to the Bigfoot Field Researchers Organization (BFRO). Based on the visualization, most observations occurred between the late 1990s and early 2010s. To address massive file sizes and the presence of missing values, I sampled the data to reduce file size while retaining the necessary information. This plot does not overlap with Homework 5, as I used a different encoder and dataset for Homework 6.</p>
+
+<h4 id="second-plot-write-up">Second Plot Write-up</h4>
+
+<p>The second plot illustrates the relationship between the median temperature and dew point recorded during the observations, along with the amount of cloud cover. I encoded this plot using mark_circle to create a scatterplot, which reveals that temperature and dew points are positively correlated — as temperature increases, the dew point also increases. Additionally, the highest cloud cover values were observed when the temperature and dew point were reported at approximately a 1:1 ratio (e.g., 40°F temperature to 40°F dew point). For better visual interpretation, I used the ‘sinebow’ color scheme to represent cloud cover.</p>
+
+<p>The data was transformed for the same reasons as the first plot. The transformed dataset contains five columns (date, temperature_mid, dew_point, cloud_cover, and year—derived from the date column) with 2,661 samples, while the original dataset consisted of 4,747 samples and 29 columns. Like the first plot, this plot has no overlap with Homework 5, as new encoders and a different dataset were used for Homework 6.</p>
+
+<h4 id="interactivity">Interactivity</h4>
+
+<p>The interactivity for this assignment involves a slider that adjusts the year displayed in the scatterplot. By default, the scatterplot shows data for all years. When the user interacts with the slider, the plot updates to display only the data recorded for the selected year.</p>
 
 <!-- these are written in a combo of html and liquid -->
 
