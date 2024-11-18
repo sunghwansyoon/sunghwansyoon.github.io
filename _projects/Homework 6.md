@@ -1,7 +1,7 @@
 ---
 name: Homework 6
 tools: [Python, HTML, vega-lite, Altair]
-image: assets/pngs/cars.png
+image: assets/pngs/bigfoot.png
 description: This is a homework 6 that uses vega-lite & altair for interactive viz!
 custom_js:
   - vega.min
